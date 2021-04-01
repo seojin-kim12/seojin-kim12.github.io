@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title> 당신의 정보를 저에게 알려주세요! </title>
+        <style>
+            .float-left{width:200px; height:50px; padding:10px; margin:30px; float:left;}
+            #bs1{border:1px solid rgba(35, 35, 36, 0.4);
+                 box-shadow: 0px 0px 20px 10px rgba(35, 35, 36, 0.4);}
+        </style>
+    </head>
+
+    <body>
+        <center>
+            <div id="bs1">
+                <h1> 당신의 정보를 저에게 알려주세요! </h1>
+            </div>
+        </center>
+        <form action="./../hw04/02_postdata.html" method="GET">
+            <form action="page.jsp" method="get">
+                <h3> 당신의 이름과 학교, 학과는 무엇인가요?</h3>
+                <p>이름 : <input type="text" name="name"></p>
+                <p>학교 : <input type="text" name="name"></p>
+                <p>학과 : <input type="text" name="name"></p>
+                <p></p>
+            <h3> 당신의 성별은 무엇인가요? </h3>
+            <input type="radio" name="sex" value="male" checked>남자
+            <input type="radio" name="sex" value="female" >여자
+            <p></p>
+            <h3> 당신의 몇 학년입니까?</h3>
+            <input type="radio" name="radio" value="year" checked>1학년
+            <input type="radio" name="radio" value="year" >2학년
+            <input type="radio" name="radio" value="year" >3학년
+            <input type="radio" name="radio" value="year" >4학년
+            <p></p>
+            <h3> 배우고 싶은 제2언어는 무엇인가요? </h3>
+                <select name="language" size="7" multiple>
+                    <option value="1" selected>한국어</option>
+                    <option value="2">중국어</option>
+                    <option value="3">일본어</option>
+                    <option value="4" selected>영어</option>
+                    <option value="5">독일어</option>
+                    <option value="6">스페인어</option>
+                    <option value="7" selected>프랑스어</option>
+                    <option value="8">아랍어</option>
+                    <option value="9">도깨비어</option>
+                </select>
+                <p></p>
+            <h3> 당신의 생년월일을 알려주세요. </h3>
+            Birthday : <input type="date" name="Birthday">
+            <p></p>
+            <h3> 당신이 좋아하는 색상을 알려주세요. </h3>
+            <input type="color" name="favorite_color" value="#1111aa">
+            <p></p>
+            <h3> 당신의 이메일과 github주소를 알려주세요. </h3>
+            이메일 : <input type+"email" name="youremail">
+            <br>github주소 : <input type+"url" name="yourhome">
+            <p></p>
+            <h3> 당신에 대하여 더 알려주세요! </h3>
+            <textarea rows="10" cols="50">텍스트를 작성하시오.</textarea>
+            <P></P>
+                <input type="submit" value="제출">
+                <input type="reset" value="초기화">
+            </form>
+        </form>
+    </body>
+</html>
